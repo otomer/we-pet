@@ -10,7 +10,7 @@ class App extends Component {
       parents: [],
     }
   }
-
+ 
   componentDidMount() {
     fetch('http://localhost:3001/api/parents')
         .then(response => response.json())
