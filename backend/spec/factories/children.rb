@@ -17,8 +17,8 @@
 #  fk_rails_...  (parent_id => parents.id)
 #
 
-class Child < ApplicationRecord
-  belongs_to :parent
-
-  validates :name, presence: true
+FactoryBot.define do
+  factory :child, class: Child do
+    name      { Faker::Name.name }
+  end
 end

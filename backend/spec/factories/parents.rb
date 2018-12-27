@@ -8,10 +8,8 @@
 #  updated_at :datetime         not null
 #
 
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: MyString
-
-two:
-  name: MyString
+FactoryBot.define do
+  factory :parent, class: Parent do
+    name      { Faker::Name.name }
+  end
+end

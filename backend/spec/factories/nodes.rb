@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: parents
+# Table name: nodes
 #
 #  id         :bigint(8)        not null, primary key
 #  name       :string
@@ -8,10 +8,8 @@
 #  updated_at :datetime         not null
 #
 
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: MyString
-
-two:
-  name: MyString
+FactoryBot.define do
+  factory :node, class: Node do
+    name      { Faker::Name.name }
+  end
+end
