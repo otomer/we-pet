@@ -6,6 +6,9 @@ Steps necessary to get the application up and running
 * Ruby version: 2.3.7p456 (2018-03-28 revision 63024)
 * Rails version:  5.2.2
 ---
+### Server start
+    rails s -p 3001
+---
 #### Database 
 Using PostgreSQL v.11
     
