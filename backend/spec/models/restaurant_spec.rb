@@ -43,15 +43,15 @@ RSpec.describe Restaurant, type: :model do
     end
   end
 
-  # describe 'valid input with calculated rating' do
-  #   let(:restaurant) { FactoryBot.create(:restaurant)}
-  #   it 'should set calculated rating properly' do
-  #     restaurant.reviews << FactoryBot.create(:review, resturant: restaurant, rating: 1)
-  #     restaurant.reviews << FactoryBot.create(:review, resturant: restaurant, rating: 2)
-  #     restaurant.reviews << FactoryBot.create(:review, resturant: restaurant, rating: 3)
-  #     restaurant.rating_calculate
-  #     expect(restaurant.rating_avg).to eq(2)
-  #   end
-  # end
+  describe 'valid input with calculated rating' do
+    let(:restaurant) { FactoryBot.create(:restaurant)}
+    it 'should set calculated rating properly' do
+      restaurant.reviews << FactoryBot.create(:review, rating: 1)
+      restaurant.reviews << FactoryBot.create(:review, rating: 2)
+      restaurant.reviews << FactoryBot.create(:review, rating: 3)
+      restaurant.initialize_rating_avg
+      expect(restaurant.rating_avg).to eq(2)
+    end
+  end
 
 end
