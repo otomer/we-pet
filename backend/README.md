@@ -57,7 +57,7 @@ This API is used to fetch restaurants, locations, reviews and cuisines for easy 
 #### Testing
 How to run the test suite:
 
-- Run all tests using:    `rspec spec/integrations`
+- Run all tests using:    `rspec`
 - Only model tests:     `rspec spec/integrations`   
 - Only integration tests:    `rspec spec/integrations`
 ---
