@@ -4,7 +4,8 @@ December, 2018
 ## Overview
 This website let's you view and filter restaurants by decision-crticial parameters such as time-to-delivery, 10bis availability, cuisines and location. In short: this is a Ruby on Rails backend with a React frontend.
 
-## Backend
+## Backend 
+[Read more about the backend](https://github.com/otomer/we-pet/blob/master/backend/README.md)
 - Ruby on Rails (2.3.7) / Rails (5.2.2)
 - Testing using RSpec
 - API documentation & integration testing using Swagger
@@ -19,6 +20,7 @@ Generated with <img src="https://camo.githubusercontent.com/456fc398063f4b75ec39
 Image to be added
 
 ## Frontend
+[Read more about the backend](https://github.com/otomer/we-pet/blob/master/frontend/README.md)
 - TBA
 
 ---
