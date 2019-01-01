@@ -71,8 +71,8 @@ describe 'Locations API' do
       }
 
       response '200', 'updated' do
-        let(:id) {FactoryBot.create(:location, restaurant_id: FactoryBot.create(:restaurant).id).id}
-        let(:location) {FactoryBot.create(:location, id: id)}
+        let(:id) {FactoryBot.create(:location).id}
+        let(:location) {{address:'elsewhere', longitude: '0', latitude: '0'}}
         run_test!
       end
 
@@ -90,7 +90,7 @@ describe 'Locations API' do
       parameter name: :id, :in => :path, :type => :string, :description => 'Location ID'
 
       response '200', 'deleted' do
-        let(:id) {FactoryBot.create(:location, restaurant_id: restaurant_id).id}
+        let(:id) {FactoryBot.create(:location).id}
         run_test!
       end
 

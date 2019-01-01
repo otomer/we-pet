@@ -303,16 +303,42 @@
     },
     "/api/v1/restaurants": {
       "get": {
-        "summary": "Get all restaurants",
+        "summary": "Get all/filtered restaurants",
         "tags": [
           "Restaurants"
         ],
         "consumes": [
           "application/json"
         ],
+        "parameters": [
+          {
+            "name": "q_name",
+            "in": "params",
+            "type": "string",
+            "description": "Restaurant filter name"
+          },
+          {
+            "name": "q_max_delivery_time",
+            "in": "params",
+            "integer": "string",
+            "description": "Restaurant filter max delivery time"
+          },
+          {
+            "name": "q_is_tenbis",
+            "in": "params",
+            "type": "boolean",
+            "description": "Restaurant filter is tenbis"
+          },
+          {
+            "name": "q_min_rating_avg",
+            "in": "params",
+            "type": "integer",
+            "description": "Restaurant filter min rating avg"
+          }
+        ],
         "responses": {
           "200": {
-            "description": "retrieved"
+            "description": "retrieved (filtered by is_tenbis)"
           }
         }
       },
@@ -529,7 +555,7 @@
             "description": "created"
           },
           "422": {
-            "description": "invalid request (no address)"
+            "description": "invalid request (no author)"
           }
         }
       }
@@ -605,9 +631,6 @@
                 },
                 "comment": {
                   "type": "text"
-                },
-                "restaurant_id": {
-                  "type": "integer"
                 }
               }
             }
@@ -621,9 +644,7 @@
             "description": "invalid request (id)"
           }
         }
-      }
-    },
-    "/api/v1/restaurants/{id}/reviews/{id}": {
+      },
       "delete": {
         "summary": "Delete a review",
         "tags": [
@@ -638,6 +659,13 @@
             "in": "path",
             "type": "string",
             "description": "Review ID",
+            "required": true
+          },
+          {
+            "name": "restaurant_id",
+            "in": "path",
+            "type": "string",
+            "description": "Restaurant ID",
             "required": true
           }
         ],

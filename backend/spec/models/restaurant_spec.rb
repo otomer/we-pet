@@ -6,7 +6,7 @@
 #  is_tenbis         :boolean          default(FALSE)
 #  max_delivery_time :integer
 #  name              :string(250)      not null
-#  rating            :decimal(, )
+#  rating_avg        :float
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #
@@ -21,7 +21,7 @@ RSpec.describe Restaurant, type: :model do
 
   describe 'validations' do
     it {should validate_presence_of(:name)}
-    it {should validate_numericality_of(:rating)}
+    it {should validate_numericality_of(:rating_avg)}
   end
 
   describe 'associations' do
@@ -42,4 +42,16 @@ RSpec.describe Restaurant, type: :model do
           .to raise_error(/Name can't be blank/)
     end
   end
+
+  # describe 'valid input with calculated rating' do
+  #   let(:restaurant) { FactoryBot.create(:restaurant)}
+  #   it 'should set calculated rating properly' do
+  #     restaurant.reviews << FactoryBot.create(:review, resturant: restaurant, rating: 1)
+  #     restaurant.reviews << FactoryBot.create(:review, resturant: restaurant, rating: 2)
+  #     restaurant.reviews << FactoryBot.create(:review, resturant: restaurant, rating: 3)
+  #     restaurant.rating_calculate
+  #     expect(restaurant.rating_avg).to eq(2)
+  #   end
+  # end
+
 end

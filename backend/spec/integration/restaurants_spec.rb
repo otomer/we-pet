@@ -3,11 +3,29 @@ require 'swagger_helper'
 describe 'Restaurants API' do
 
   path '/api/v1/restaurants' do
-    get 'Get all restaurants' do
+
+    get 'Get all/filtered restaurants' do
       tags 'Restaurants'
       consumes 'application/json'
+      parameter name: :q_name, :in => :params, :type => :string, :description => 'Restaurant filter name'
+      parameter name: :q_max_delivery_time, :in => :params, :integer => :string, :description => 'Restaurant filter max delivery time'
+      parameter name: :q_is_tenbis, :in => :params, :type => :boolean, :description => 'Restaurant filter is tenbis'
+      parameter name: :q_min_rating_avg, :in => :params, :type => :integer, :description => 'Restaurant filter min rating avg'
+
+      let(:r1) {FactoryBot.create(:restaurant, is_tenbis: true, max_delivery_time: 1)}
+      let(:r2) {FactoryBot.create(:restaurant, :hummus, is_tenbis: false)}
 
       response '200', 'retrieved' do
+        run_test!
+      end
+
+      response '200', 'retrieved (filtered by name)' do
+        let(:q_name) {r2.name}
+        run_test!
+      end
+
+      response '200', 'retrieved (filtered by is_tenbis)' do
+        let(:q_is_tenbis) {r1.is_tenbis}
         run_test!
       end
     end

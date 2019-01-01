@@ -3,7 +3,7 @@ class CreateReviews < ActiveRecord::Migration[5.2]
     create_table :reviews do |t|
       t.references :restaurant, foreign_key: true
       t.string :author, null: false, limit: 50    # Reviewer's name
-      t.decimal :rating, percision: 2             # Review Rating
+      t.float :rating, percision: 2             # Review Rating
       t.text :comment, limit: 500                 # Comment
       t.timestamps
     end

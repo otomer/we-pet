@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2018_12_30_073804) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name", limit: 250, null: false
-    t.decimal "rating"
+    t.float "rating_avg"
     t.boolean "is_tenbis", default: false
     t.integer "max_delivery_time"
     t.datetime "created_at", null: false
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2018_12_30_073804) do
   create_table "reviews", force: :cascade do |t|
     t.bigint "restaurant_id"
     t.string "author", limit: 50, null: false
-    t.decimal "rating"
+    t.float "rating"
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

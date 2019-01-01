@@ -8,9 +8,10 @@ module Api
         page = params[:page] ? params[:page].to_i : 1
         per_page = 6
 
-        @restaurants = Restaurant.paginate(:page => page, :per_page => per_page)
+        @restaurants = Restaurant.filter(params.slice(:q_name, :q_is_tenbis, :q_max_delivery_time, :q_min_rating_avg)).all
+        total_count = @restaurants.all.size
+        @restaurants = @restaurants.paginate(:page => page, :per_page => per_page)
 
-        total_count = Restaurant.all.size
         from = (page - 1) * per_page
         pager = {
             page: page,

@@ -6,7 +6,7 @@
 #  is_tenbis         :boolean          default(FALSE)
 #  max_delivery_time :integer
 #  name              :string(250)      not null
-#  rating            :decimal(, )
+#  rating_avg        :float
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #
@@ -20,7 +20,7 @@ FactoryBot.define do
     name {Faker::Name.name}
     is_tenbis {Faker::Boolean}
     max_delivery_time {Faker::Number.number(3)}
-    rating {Faker::Number.between(0, 3)}
+    rating_avg {Faker::Number.between(0, 3)}
 
     trait :hummus do
       name 'Hummus Ashkara'
