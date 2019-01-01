@@ -49,9 +49,8 @@ How to run the test suite:
 - Run all tests using:    `rspec spec/integrations`
 - Only model tests:     `rspec spec/integrations`   
 - Only integration tests:    `rspec spec/integrations`
-
-
-##### Integrations
+---
+#### Integrations
 
 - Testing:
     - [Shoulda Matchers](https://github.com/thoughtbot/shoulda-matchers) (one-liners tests)
