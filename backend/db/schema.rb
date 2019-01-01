@@ -10,30 +10,54 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_26_213633) do
+ActiveRecord::Schema.define(version: 2018_12_30_073804) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "children", force: :cascade do |t|
-    t.string "name"
-    t.bigint "parent_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["parent_id"], name: "index_children_on_parent_id"
+  create_table "cuisines", force: :cascade do |t|
+    t.string "name", null: false
   end
 
-  create_table "nodes", force: :cascade do |t|
-    t.string "name"
+  create_table "locations", force: :cascade do |t|
+    t.bigint "restaurant_id"
+    t.string "address", null: false
+    t.string "longitude"
+    t.string "latitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_locations_on_restaurant_id", unique: true
   end
 
-  create_table "parents", force: :cascade do |t|
-    t.string "name"
+  create_table "restaurant_cuisines", id: false, force: :cascade do |t|
+    t.bigint "cuisine_id"
+    t.bigint "restaurant_id"
+    t.index ["cuisine_id"], name: "index_restaurant_cuisines_on_cuisine_id"
+    t.index ["restaurant_id"], name: "index_restaurant_cuisines_on_restaurant_id"
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string "name", limit: 250, null: false
+    t.decimal "rating"
+    t.boolean "is_tenbis", default: false
+    t.integer "max_delivery_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_restaurants_on_name"
   end
 
-  add_foreign_key "children", "parents"
+  create_table "reviews", force: :cascade do |t|
+    t.bigint "restaurant_id"
+    t.string "author", limit: 50, null: false
+    t.decimal "rating"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_reviews_on_restaurant_id"
+  end
+
+  add_foreign_key "locations", "restaurants"
+  add_foreign_key "restaurant_cuisines", "cuisines"
+  add_foreign_key "restaurant_cuisines", "restaurants"
+  add_foreign_key "reviews", "restaurants"
 end

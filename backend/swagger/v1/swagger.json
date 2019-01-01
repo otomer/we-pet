@@ -1,0 +1,655 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "weTasty / Backend API",
+    "version": "Version 1"
+  },
+  "paths": {
+    "/api/v1/cuisines": {
+      "get": {
+        "summary": "Get all cuisines",
+        "tags": [
+          "Cuisines"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Creates a cuisine",
+        "tags": [
+          "Cuisines"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "cuisine",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "created"
+          },
+          "422": {
+            "description": "invalid request (no name)"
+          }
+        }
+      }
+    },
+    "/api/v1/cuisines/{id}": {
+      "get": {
+        "summary": "Retrieves a cuisine",
+        "tags": [
+          "Cuisines"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Cuisine ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "retrieved"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      },
+      "put": {
+        "summary": "Updates a cuisine",
+        "tags": [
+          "Cuisines"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Cuisine ID",
+            "required": true
+          },
+          {
+            "name": "cuisine",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "updated"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a cuisine",
+        "tags": [
+          "Cuisines"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Cuisine ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "deleted"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      }
+    },
+    "/api/v1/locations": {
+      "get": {
+        "summary": "Get all locations",
+        "tags": [
+          "Locations"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Creates a location",
+        "tags": [
+          "Locations"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "location",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                },
+                "restaurant_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "address"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "created"
+          },
+          "422": {
+            "description": "invalid request (no address)"
+          }
+        }
+      }
+    },
+    "/api/v1/locations/{id}": {
+      "get": {
+        "summary": "Retrieves a location",
+        "tags": [
+          "Locations"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Location ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "retrieved"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      },
+      "put": {
+        "summary": "Updates a location",
+        "tags": [
+          "Locations"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Location ID",
+            "required": true
+          },
+          {
+            "name": "location",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "updated"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a location",
+        "tags": [
+          "Locations"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Location ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "deleted"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      }
+    },
+    "/api/v1/restaurants": {
+      "get": {
+        "summary": "Get all restaurants",
+        "tags": [
+          "Restaurants"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Creates a restaurant",
+        "tags": [
+          "Restaurants"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "restaurant",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "is_tenbis": {
+                  "type": "boolean"
+                },
+                "max_delivery_time": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "created"
+          },
+          "422": {
+            "description": "invalid request (no name)"
+          }
+        }
+      }
+    },
+    "/api/v1/restaurants/{id}": {
+      "get": {
+        "summary": "Retrieves a restaurant",
+        "tags": [
+          "Restaurants"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Restaurant ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "retrieved"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      },
+      "put": {
+        "summary": "Updates a restaurant",
+        "tags": [
+          "Restaurants"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Restaurant ID",
+            "required": true
+          },
+          {
+            "name": "restaurant",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "is_tenbis": {
+                  "type": "boolean"
+                },
+                "max_delivery_time": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "updated"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a restaurant",
+        "tags": [
+          "Restaurants"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Restaurant ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "deleted"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      }
+    },
+    "/api/v1/restaurants/{restaurant_id}/reviews": {
+      "get": {
+        "summary": "Get all reviews",
+        "tags": [
+          "Reviews"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "restaurant_id",
+            "in": "path",
+            "type": "string",
+            "description": "Restaurant ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Creates a review",
+        "tags": [
+          "Reviews"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "restaurant_id",
+            "in": "path",
+            "type": "string",
+            "description": "Restaurant ID",
+            "required": true
+          },
+          {
+            "name": "review",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "author": {
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "integer"
+                },
+                "comment": {
+                  "type": "string"
+                },
+                "restaurant_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "address"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "created"
+          },
+          "422": {
+            "description": "invalid request (no address)"
+          }
+        }
+      }
+    },
+    "/api/v1/restaurants/{restaurant_id}/reviews/{id}": {
+      "get": {
+        "summary": "Retrieves a review for a restaurant",
+        "tags": [
+          "Reviews"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Review ID",
+            "required": true
+          },
+          {
+            "name": "restaurant_id",
+            "in": "path",
+            "type": "string",
+            "description": "Restaurant ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "retrieved"
+          },
+          "422": {
+            "description": "invalid request (restaurant_id)"
+          }
+        }
+      },
+      "put": {
+        "summary": "Updates a review",
+        "tags": [
+          "Reviews"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Review ID",
+            "required": true
+          },
+          {
+            "name": "restaurant_id",
+            "in": "path",
+            "type": "string",
+            "description": "Restaurant ID",
+            "required": true
+          },
+          {
+            "name": "review",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "author": {
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "decimal"
+                },
+                "comment": {
+                  "type": "text"
+                },
+                "restaurant_id": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "updated"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      }
+    },
+    "/api/v1/restaurants/{id}/reviews/{id}": {
+      "delete": {
+        "summary": "Delete a review",
+        "tags": [
+          "Reviews"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Review ID",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "deleted"
+          },
+          "422": {
+            "description": "invalid request (id)"
+          }
+        }
+      }
+    }
+  }
+}
