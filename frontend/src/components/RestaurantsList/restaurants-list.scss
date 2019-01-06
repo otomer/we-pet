@@ -1,0 +1,15 @@
+.restaurants-list-container {
+  flex: 2;
+  padding: 0 5px;
+
+  .container-content {
+    overflow-y: auto;
+    // height: 100vh;
+    height: 100%;
+    padding-right: 1rem;
+
+    span.reviews {
+      padding-left: 0.5rem;
+    }
+  }
+}

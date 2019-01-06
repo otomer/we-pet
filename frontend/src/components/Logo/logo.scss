@@ -1,0 +1,19 @@
+.logo-container {
+  flex: 0 0 auto;
+  margin-left: 2.5rem;
+
+  h1 {
+    font-family: 'Knockout Featherweight';
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.12rem;
+    color: var(--we-black-ANCHORAGE);
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .logo-icon {
+    color: var(--we-black-ANCHORAGE);
+    padding-right: 1rem;
+  }
+}

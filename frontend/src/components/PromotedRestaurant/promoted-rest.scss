@@ -1,0 +1,35 @@
+.promoted-rest-section {
+  background-color: #fafafa;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .promoted-rest-icon {
+    flex-basis: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .promoted-rest-title {
+    flex: 1 1 auto;
+    margin: 0 2rem;
+  }
+
+  .promoted-rest-title h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--we-black-ANCHORAGE);
+    white-space: nowrap;
+    margin: 1.3rem 0;
+  }
+
+  .promoted-rest-title i {
+    font-size: 1.5rem;
+    // color: #6e6e6e;
+  }
+}
