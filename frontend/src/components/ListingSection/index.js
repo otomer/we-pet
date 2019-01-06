@@ -5,13 +5,13 @@ import RestaurantsList from '../RestaurantsList';
 import './listing-section.scss';
 
 const ListingSection = props => {
-  const { items } = props;
-  const locations = items.map(element => element.location);
+  const { restaurants } = props;
+  const locations = restaurants && restaurants.map(element => element.location);
 
   return (
     <main className="listing-section-container">
       <div className="container flexbox-container">
-        <RestaurantsList items={items} />
+        <RestaurantsList restaurants={restaurants} />
         <Map items={locations} />
       </div>
     </main>
@@ -19,7 +19,7 @@ const ListingSection = props => {
 };
 
 ListingSection.propTypes = {
-  items: PropTypes.array.isRequired,
+  restaurants: PropTypes.array,
 };
 
 export default ListingSection;

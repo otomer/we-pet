@@ -1,21 +1,40 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { fetchRestaurants } from '../../actions';
 import ListingSection from '../../components/ListingSection';
+import { bindActionCreators } from 'redux';
 
-export default class ListingSectionContainer extends Component {
-  state = {
-    restaurants: [],
-  };
-
+class ListingSectionContainer extends Component {
   componentDidMount() {
-    // TODO: after adding redux - set this as an action
-    axios.get('restaurants').then(res => {
-      const restaurants = res.data.restaurants;
-      this.setState({ restaurants });
-    });
+    this.props.fetchRestaurants();
   }
 
   render() {
-    return <ListingSection items={this.state.restaurants} />;
+    const { restaurants } = this.props;
+    return <ListingSection restaurants={restaurants} />;
   }
 }
+
+ListingSectionContainer.propTypes = {
+  restaurants: PropTypes.array,
+  fetchRestaurants: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = state => {
+  const { isFetching, lastUpdated, restaurants } = state.restaurantsReducer;
+  return {
+    isFetching,
+    lastUpdated,
+    restaurants,
+  };
+};
+
+function mapDispatchToProps(dispatch) {
+  return { fetchRestaurants: bindActionCreators(fetchRestaurants, dispatch) };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(ListingSectionContainer);

@@ -1,21 +1,39 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { fetchCuisines } from '../../actions';
 import CuisinesNavigation from '../../components/CuisinesNavigation';
 
-export default class CategoriesContainer extends Component {
-  state = {
-    cuisines: [],
-  };
-
+class CategoriesContainer extends Component {
   componentDidMount() {
-    // TODO: after adding redux - set this as an action
-    axios.get('cuisines').then(res => {
-      const cuisines = res.data;
-      this.setState({ cuisines });
-    });
+    this.props.fetchCuisines();
   }
-
   render() {
-    return <CuisinesNavigation items={this.state.cuisines} />;
+    const { cuisines } = this.props;
+    return <CuisinesNavigation cuisines={cuisines} />;
   }
 }
+
+CategoriesContainer.propTypes = {
+  cuisines: PropTypes.array,
+  fetchCuisines: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = state => {
+  const { isFetching, lastUpdated, cuisines } = state.cuisinesReducer;
+  return {
+    isFetching,
+    lastUpdated,
+    cuisines,
+  };
+};
+
+function mapDispatchToProps(dispatch) {
+  return { fetchCuisines: bindActionCreators(fetchCuisines, dispatch) };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(CategoriesContainer);
