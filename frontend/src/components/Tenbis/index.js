@@ -1,10 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import './tenbis.scss';
 
-const Tenbis = props => {
-  const { isTenbis } = props;
+import PropTypes from 'prop-types';
+import React from 'react';
 
+const Tenbis = ({ isTenbis }) => {
   return (
     <React.Fragment>
       {isTenbis && (
@@ -15,7 +14,7 @@ const Tenbis = props => {
 };
 
 Tenbis.propTypes = {
-  isTenbis: PropTypes.bool.isRequired,
+  isTenbis: PropTypes.bool,
 };
 
 export default Tenbis;

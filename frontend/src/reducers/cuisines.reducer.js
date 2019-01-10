@@ -3,7 +3,7 @@ import { REQUEST_CUISINES, RETRIEVED_CUISINES } from '../actions';
 const cuisinesReducer = (
   state = {
     isFetching: false,
-    restaurants: [],
+    cuisines: [],
   },
   action,
 ) => {

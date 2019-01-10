@@ -5,7 +5,7 @@ module Api
 
       # GET /cuisines
       def index
-        render json: Cuisine.all, status: :ok
+        render json: Cuisine.byRestaurantsCount, status: :ok
       end
 
       # GET /cuisines/1
@@ -29,15 +29,19 @@ module Api
 
       # PATCH/PUT /cuisines/1
       def update
-        if @cuisine
-          if @cuisine.update(cuisine_params)
-            render json: @cuisine, status: :ok
-          else
-            render json: {message: 'cuisine was not updated', errors: @cuisine.errors}, status: :unprocessable_entity
-          end
-        else
-          render json: {message: 'cuisine does not exist'}, status: :unprocessable_entity
-        end
+        render json: {message: 'cuisine does not exist'}, status: :unprocessable_entity && return unless @cuisine
+        render json: {message: 'cuisine was not updated', errors: @cuisine.errors}, status: :unprocessable_entity && return unless @cuisine.update(cuisine_params)
+        render json: @cuisine, status: :ok
+
+        # if @cuisine
+        #   if @cuisine.update(cuisine_params)
+        #     render json: @cuisine, status: :ok
+        #   else
+        #     render json: {message: 'cuisine was not updated', errors: @cuisine.errors}, status: :unprocessable_entity
+        #   end
+        # else
+        #   render json: {message: 'cuisine does not exist'}, status: :unprocessable_entity
+        # end
       end
 
       # DELETE /cuisines/1
@@ -57,6 +61,8 @@ module Api
 
       def set_cuisine
         @cuisine = Cuisine.find_by(:id => params[:id])
+        render json: {message: 'cuisine does not exist'}, status: :unprocessable_entity && return unless @cuisine
+
       end
 
       def cuisine_params
