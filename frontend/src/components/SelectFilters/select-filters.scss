@@ -1,0 +1,12 @@
+.select-filters {
+  display: flex;
+  flex: 0 0 30%;
+
+  .select-style {
+    margin-left: auto;
+  }
+  select {
+    height: 30px;
+    background: var(--white);
+  }
+}

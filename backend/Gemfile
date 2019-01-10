@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) {|repo| "https://github.com/#{repo}.git"}
 
 ruby '2.3.7'
 
@@ -19,6 +19,10 @@ gem 'puma', '~> 3.11'
 gem 'colorize'
 gem 'will_paginate'
 gem 'rswag'
+gem 'sidekiq'
+gem "sidekiq-cron"
+gem "sidekiq-failures"
+gem 'rufus-scheduler'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

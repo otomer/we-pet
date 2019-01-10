@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-export const API_URL_GET_CUISINES = 'cuisines';
 export const REQUEST_CUISINES = 'REQUEST_CUISINES';
 export const RETRIEVED_CUISINES = 'RETRIEVED_CUISINES';
 
@@ -15,7 +14,7 @@ export function fetchCuisines() {
   return (dispatch, getState) => {
     dispatch(requestCuisines());
     return axios
-      .get(API_URL_GET_CUISINES)
+      .get('cuisines')
       .then(response => response.data)
       .then(cuisines => dispatch(retrieveCuisines(cuisines)));
   };

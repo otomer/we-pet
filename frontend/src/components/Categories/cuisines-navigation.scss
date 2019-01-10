@@ -6,9 +6,12 @@
 
   ul {
     display: flex;
+    overflow-x: scroll;
   }
 
-  .nav-item a {
+  .nav-item button {
+    background: #fafafa;
+    border: 0;
     display: inline-block;
     font-size: 1.4rem;
     font-weight: 500;
@@ -18,12 +21,15 @@
     padding: 1.5rem 3.2rem;
   }
 
-  .nav-item a.current {
+  .nav-item button.current {
     color: var(--we-black-ANCHORAGE);
     border-bottom: 0.3rem solid #6e6e6e;
   }
+  .nav-item button:focus {
+    outline: 0;
+  }
 
-  .nav-item a:hover {
+  .nav-item button:hover {
     color: var(--we-black-ANCHORAGE);
     background: var(--we-grey-PITTSBURGH);
   }

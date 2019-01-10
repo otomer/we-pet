@@ -14,6 +14,7 @@
 #
 #  index_restaurants_on_name  (name)
 #
+require 'rake'
 
 class Restaurant < ApplicationRecord
   include Filterable
@@ -36,9 +37,15 @@ class Restaurant < ApplicationRecord
     save
   end
 
+  def self.run_take(task_name)
+    load File.join(RAILS_ROOT, 'lib', 'tasks', 'db')
+    Rake::Task[task_name].invoke
+  end
+
   # Scoped filters
-  scope :q_name, -> (val) {where("lower(name) like ?", "%#{val}%")}
+  scope :q_name, -> (val) {where("lower(restaurants.name) like ?", "%#{val.downcase}%")}
   scope :q_is_tenbis, -> (val) {where is_tenbis: val}
   scope :q_max_delivery_time, ->(val) {where('max_delivery_time <= ?', val)}
   scope :q_min_rating_avg, ->(val) {where('rating_avg >= ? ', val.to_i)}
+  scope :q_cuisine, ->(val) {joins(:cuisines).where(cuisines: { id: val }) }
 end

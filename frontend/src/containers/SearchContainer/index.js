@@ -1,13 +1,23 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import Search from '../../components/Search';
+import { connect } from 'react-redux';
+import { filterName } from '../../actions';
 
-const SearchContainer = () => {
-  return <Search handleClick={() => console.log('temp')} />;
+const SearchContainer = ({ filterName }) => {
+  return <Search filterName={filterName} />;
 };
 
 SearchContainer.propTypes = {
-  refreshRestaurants: PropTypes.func,
+  filterName: PropTypes.func,
 };
 
-export default SearchContainer;
+const mapStateToProps = state => state;
+const mapDispatchToProps = {
+  filterName,
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(SearchContainer);

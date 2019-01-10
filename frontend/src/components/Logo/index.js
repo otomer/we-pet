@@ -1,6 +1,7 @@
-import React from 'react';
-import { APP_NAME } from '../../constants';
 import './logo.scss';
+
+import { APP_NAME } from '../../constants';
+import React from 'react';
 
 const Logo = () => {
   return (
