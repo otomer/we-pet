@@ -24,6 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - [react-moment](https://www.npmjs.com/package/react-moment) (Moment's date library)
     - [react-google-maps](https://github.com/tomchentw/react-google-maps) (Google Maps integration component)
 - Styling
+    - [fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free) (Font awesome, icons use)
     - [node-sass](https://www.npmjs.com/package/node-sass) (sass stylesheet preprocessor)
 - State management
     - [react-redux](https://github.com/reduxjs/react-redux) (manage appication's state using a predictable state container, also using [redux](https://github.com/reduxjs/redux))
