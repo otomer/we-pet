@@ -1,4 +1,36 @@
+# wetasty / Frontend
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+(For more details about the create react app package, see down section "Create React App")
+
+#### Prerequisites
+* npm
+---
+### Server start
+    yarn start
+---
+ 
+##### Initialization tasks
+  
+---
+#### Packages used
+ 
+- Type 
+    - [link title](link) (desc)
+    
+---
+#### Testing
+No testing
+
+    
+ 
+ 
+---
+---
+---
+Create React App
+
+
 
 ## Available Scripts
 
