@@ -3,17 +3,18 @@ import PropTypes from 'prop-types';
 import './cuisines-navigation.scss';
 
 const CuisinesNavigation = props => {
-  const { items } = props;
+  const { cuisines } = props;
   return (
     <nav className="cuisines-navigation-container">
       <div className="container">
         <ul>
-          {items.map(item => (
-            <li key={item.id} className="nav-item">
-              <a href="/">{item.name}</a>{' '}
-              {/* TODO: after adding redux - set this as action property*/}
-            </li>
-          ))}
+          {cuisines &&
+            cuisines.map(item => (
+              <li key={item.id} className="nav-item">
+                <a href="/">{item.name}</a>{' '}
+                {/* TODO: after adding redux - set this as action property*/}
+              </li>
+            ))}
         </ul>
       </div>
     </nav>
@@ -21,7 +22,7 @@ const CuisinesNavigation = props => {
 };
 
 CuisinesNavigation.propTypes = {
-  items: PropTypes.array.isRequired,
+  cuisines: PropTypes.array,
 };
 
 export default CuisinesNavigation;

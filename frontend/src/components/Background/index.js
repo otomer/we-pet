@@ -1,11 +1,11 @@
 import React from 'react';
-import * as Constants from '../../constants';
+import { APP_SLOGAN } from '../../constants';
 import './background.scss';
 
 const Background = () => {
   return (
     <section className="background-container">
-      <div className="title">{Constants.APP_SLOGAN}</div>
+      <div className="title">{APP_SLOGAN}</div>
     </section>
   );
 };

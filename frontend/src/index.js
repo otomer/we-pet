@@ -1,10 +1,17 @@
 import React from 'react';
-import axios from 'axios';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
+import { Provider } from 'react-redux';
+import { API_URL } from './constants';
+import store from './store';
 import App from './containers/App';
-import * as Constants from './constants';
 import './index.scss';
 
-axios.defaults.baseURL = Constants.API_URL;
+axios.defaults.baseURL = API_URL;
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root'),
+);
