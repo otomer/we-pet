@@ -3,17 +3,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 (For more details about the create react app package, see down section "Create React App")
 
-#### Prerequisites
-* npm
+### Prerequisites
+* yarn (a package manager)
+---
+### Initialization tasks
+    yarn install
 ---
 ### Server start
     yarn start
 ---
- 
-##### Initialization tasks
-  
----
-#### Packages used
+
+### Packages used
  
 - HTTP 
     - [axios](https://www.npmjs.com/package/axios) (Promise based HTTP client for the browser and node.js.)
@@ -32,7 +32,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     
     
 ---
-#### Testing
+### Testing
 No testing
 
     
