@@ -1,4 +1,4 @@
-# weTasty / BackEnd
+# wetasty / Backend
 
 Steps necessary to get the application up and running
 
