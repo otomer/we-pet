@@ -26,5 +26,7 @@
 /node_modules
 
 .idea/
-/coverage
-/db/json
+/coverage/*
+*/coverage/*
+*/db/json/*
+/db/json/*

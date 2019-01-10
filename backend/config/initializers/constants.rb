@@ -10,5 +10,4 @@ module Constants
   RESTAURANTS_FILENAME = 'restaurants.json'
   REVIEWS_FILENAME = 'reviews.json'
   CUISINES_FILENAME = 'cuisines.json'
-
 end

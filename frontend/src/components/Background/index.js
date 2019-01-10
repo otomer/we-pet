@@ -1,6 +1,7 @@
-import React from 'react';
-import { APP_SLOGAN } from '../../constants';
 import './background.scss';
+
+import { APP_SLOGAN } from '../../constants';
+import React from 'react';
 
 const Background = () => {
   return (

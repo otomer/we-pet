@@ -1,15 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
-const ReviewsBasis = props => {
-  const { average, total } = props;
+const ReviewsBasis = ({ average, total }) => {
   return (
     <span className="reviews-basis">
-      {' / ' +
-        Math.round(average * 10) / 10 +
-        ' average based on ' +
-        total +
-        ' reviews'}
+      {` ${average.toFixed(2)} average is based on ${total} reviews`}
     </span>
   );
 };
