@@ -1,0 +1,1170 @@
+{
+  "restaurants": [
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18829740
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18829740",
+        "name": "Hav Stories",
+        "url": "https://www.zomato.com/moradabad/hav-stories-moradabad-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Civil Lines, Moradabad - 244001, Near St. Mary School Street, Near Company Bagh, Moradabad Locality, Moradabad",
+          "locality": "Moradabad Locality",
+          "city": "Moradabad",
+          "city_id": 11393,
+          "latitude": "28.8427847223",
+          "longitude": "78.7637171522",
+          "zipcode": "244001",
+          "country_id": 1,
+          "locality_verbose": "Moradabad Locality, Moradabad"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "",
+        "average_cost_for_two": 250,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.3",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": 4
+        },
+        "photos_url": "https://www.zomato.com/moradabad/hav-stories-moradabad-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/moradabad/hav-stories-moradabad-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18829740",
+        "order_url": "https://www.zomato.com/moradabad/hav-stories-moradabad-locality/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/moradabad/hav-stories-moradabad-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18903142
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18903142",
+        "name": "Taste Of Punjab",
+        "url": "https://www.zomato.com/gulbarga/taste-of-punjab-gulbarga-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Manik Prabhu Apartments, Near Siddeahwar Kalyan Mantap, Gulbarga, Gulbarga Locality, Gulbarga",
+          "locality": "Gulbarga Locality",
+          "city": "Gulbarga",
+          "city_id": 11403,
+          "latitude": "17.3049953000",
+          "longitude": "76.8160678000",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Gulbarga Locality, Gulbarga"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "North Indian, Biryani",
+        "average_cost_for_two": 600,
+        "price_range": 2,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.2",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "5",
+          "custom_rating_text": "NEW",
+          "custom_rating_text_background": "#89959B",
+          "rating_tool_tip": "This restaurant is newly opened. The rating will appear once the restaurant completes 60 days in operation."
+        },
+        "photos_url": "https://www.zomato.com/gulbarga/taste-of-punjab-gulbarga-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/gulbarga/taste-of-punjab-gulbarga-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18903142",
+        "order_url": "https://www.zomato.com/gulbarga/taste-of-punjab-gulbarga-locality/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/gulbarga/taste-of-punjab-gulbarga-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18881017
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18881017",
+        "name": "Prakash Sweets",
+        "url": "https://www.zomato.com/roorkee/prakash-sweets-1-roorkee-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "19, Civil Lines New Haridwar Road, Roorkee, Roorkee Locality, Roorkee",
+          "locality": "Roorkee Locality",
+          "city": "Roorkee",
+          "city_id": 11420,
+          "latitude": "29.8690718495",
+          "longitude": "77.8899117932",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Roorkee Locality, Roorkee"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Desserts",
+        "average_cost_for_two": 300,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.6",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "votes": "12",
+          "custom_rating_text": "NEW",
+          "custom_rating_text_background": "#89959B",
+          "rating_tool_tip": "This restaurant is newly opened. The rating will appear once the restaurant completes 60 days in operation."
+        },
+        "photos_url": "https://www.zomato.com/roorkee/prakash-sweets-1-roorkee-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/roorkee/prakash-sweets-1-roorkee-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18881017",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/roorkee/prakash-sweets-1-roorkee-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18881011
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18881011",
+        "name": "Prakash Restaurant",
+        "url": "https://www.zomato.com/roorkee/prakash-restaurant-roorkee-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Azadnagar chowk, Roorkee, Roorkee Locality, Roorkee",
+          "locality": "Roorkee Locality",
+          "city": "Roorkee",
+          "city_id": 11420,
+          "latitude": "29.8682475983",
+          "longitude": "77.8763143346",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Roorkee Locality, Roorkee"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "North Indian, Chinese",
+        "average_cost_for_two": 450,
+        "price_range": 2,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.4",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "16",
+          "custom_rating_text": "NEW",
+          "custom_rating_text_background": "#89959B",
+          "rating_tool_tip": "This restaurant is newly opened. The rating will appear once the restaurant completes 60 days in operation."
+        },
+        "photos_url": "https://www.zomato.com/roorkee/prakash-restaurant-roorkee-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/roorkee/prakash-restaurant-roorkee-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18881011",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/roorkee/prakash-restaurant-roorkee-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18827359
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18827359",
+        "name": "Esco Hills Cafe The Revolutioners",
+        "url": "https://www.zomato.com/nanded/esco-hills-cafe-the-revolutioners-nanded-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Shop no 1,2  Vrundavan colony, bhagya nagar, Opp. Kadam hospital, Anand Nagar Road nanded-5",
+          "locality": "Nanded Locality",
+          "city": "Nanded",
+          "city_id": 11395,
+          "latitude": "19.1768216000",
+          "longitude": "77.3100588000",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Nanded Locality, Nanded"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "",
+        "average_cost_for_two": 450,
+        "price_range": 2,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.4",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "30"
+        },
+        "photos_url": "https://www.zomato.com/nanded/esco-hills-cafe-the-revolutioners-nanded-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/nanded/esco-hills-cafe-the-revolutioners-nanded-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18827359",
+        "order_url": "https://www.zomato.com/nanded/esco-hills-cafe-the-revolutioners-nanded-locality/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/nanded/esco-hills-cafe-the-revolutioners-nanded-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18883721
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18883721",
+        "name": "SVS Foods",
+        "url": "https://www.zomato.com/satna/svs-foods-satna-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Opp. Pushkarini Park, Hospital Chowk, Satna Locality, Satna",
+          "locality": "Satna Locality",
+          "city": "Satna",
+          "city_id": 11427,
+          "latitude": "24.5695280000",
+          "longitude": "80.8318760000",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Satna Locality, Satna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Fast Food, Indian",
+        "average_cost_for_two": 250,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.4",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "15",
+          "custom_rating_text": "NEW",
+          "custom_rating_text_background": "#89959B",
+          "rating_tool_tip": "This restaurant is newly opened. The rating will appear once the restaurant completes 60 days in operation."
+        },
+        "photos_url": "https://www.zomato.com/satna/svs-foods-satna-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/satna/svs-foods-satna-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18883721",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/satna/svs-foods-satna-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16607309
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "16607309",
+        "name": "Aqua Bar & Cafe",
+        "url": "https://www.zomato.com/bonnie-doon-vic/aqua-bar-cafe-lake-eildon?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "190 Sugarloaf Road, Lake Eildon, Lake Eildon",
+          "locality": "Bonnie Doon",
+          "city": "Bonnie Doon",
+          "city_id": 1457,
+          "latitude": "-37.2214210000",
+          "longitude": "145.9199690000",
+          "zipcode": "",
+          "country_id": 14,
+          "locality_verbose": "Bonnie Doon, Bonnie Doon"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Coffee and Tea, Modern Australian, Bar Food",
+        "average_cost_for_two": 30,
+        "price_range": 3,
+        "currency": "$",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.5",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "votes": "11"
+        },
+        "photos_url": "https://www.zomato.com/bonnie-doon-vic/aqua-bar-cafe-lake-eildon/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/bonnie-doon-vic/aqua-bar-cafe-lake-eildon/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/16607309",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/bonnie-doon-vic/aqua-bar-cafe-lake-eildon/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18900191
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18900191",
+        "name": "The Sizzling glass",
+        "url": "https://www.zomato.com/durgapur/the-sizzling-glass-durgapur-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "A-32, abanindra bithi, non company, city centre, Durgapur Locality, Durgapur",
+          "locality": "Durgapur Locality",
+          "city": "Durgapur",
+          "city_id": 11388,
+          "latitude": "23.5439210559",
+          "longitude": "87.3020615056",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Durgapur Locality, Durgapur"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Sandwich, Fast Food, Beverages, Burger",
+        "average_cost_for_two": 300,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.2",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "6",
+          "custom_rating_text": "NEW",
+          "custom_rating_text_background": "#89959B",
+          "rating_tool_tip": "This restaurant is newly opened. The rating will appear once the restaurant completes 60 days in operation."
+        },
+        "photos_url": "https://www.zomato.com/durgapur/the-sizzling-glass-durgapur-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/durgapur/the-sizzling-glass-durgapur-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18900191",
+        "order_url": "https://www.zomato.com/durgapur/the-sizzling-glass-durgapur-locality/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/durgapur/the-sizzling-glass-durgapur-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18899848
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18899848",
+        "name": "Angithi Restaurant ",
+        "url": "https://www.zomato.com/dhanbad/angithi-restaurant-dhanbad-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Near jeevan rekha medical at saraidhela Dhanbad, Dhanbad Locality, Dhanbad",
+          "locality": "Dhanbad Locality",
+          "city": "Dhanbad",
+          "city_id": 11387,
+          "latitude": "23.8118528871",
+          "longitude": "86.4581530541",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Dhanbad Locality, Dhanbad"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Afghani, Cafe, Chinese",
+        "average_cost_for_two": 250,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.3",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "7",
+          "custom_rating_text": "NEW",
+          "custom_rating_text_background": "#89959B",
+          "rating_tool_tip": "This restaurant is newly opened. The rating will appear once the restaurant completes 60 days in operation."
+        },
+        "photos_url": "https://www.zomato.com/dhanbad/angithi-restaurant-dhanbad-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/dhanbad/angithi-restaurant-dhanbad-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18899848",
+        "order_url": "https://www.zomato.com/dhanbad/angithi-restaurant-dhanbad-locality/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/dhanbad/angithi-restaurant-dhanbad-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18828780
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18828780",
+        "name": "Bigbite",
+        "url": "https://www.zomato.com/jamnagar/bigbite-bedeswar?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Nehru Road, Pandit Nehru Marg, Jamnagar - 361008, Opposite Gandhinagar Main Road, Bedeswar, Jamnagar",
+          "locality": "Bedeswar",
+          "city": "Jamnagar",
+          "city_id": 11321,
+          "latitude": "22.4866177043",
+          "longitude": "70.0542106479",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Bedeswar, Jamnagar"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Beverages",
+        "average_cost_for_two": 600,
+        "price_range": 2,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.3",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "15"
+        },
+        "photos_url": "https://www.zomato.com/jamnagar/bigbite-bedeswar/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/jamnagar/bigbite-bedeswar/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18828780",
+        "order_url": "https://www.zomato.com/jamnagar/bigbite-bedeswar/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/jamnagar/bigbite-bedeswar/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18826854
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18826854",
+        "name": "Aasife Biriyani",
+        "url": "https://www.zomato.com/tanjore/aasife-biriyani-south-rampart?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "No 2851/16, Trichy Road, Arulananada Nagar, Thanjavur - 613007, Opposite Vinodhagan Hospital, Thanjavur Locality, Thanjavur",
+          "locality": "South Rampart",
+          "city": "Tanjore",
+          "city_id": 11366,
+          "latitude": "10.7738672121",
+          "longitude": "79.1362464800",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "South Rampart, Tanjore"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "",
+        "average_cost_for_two": 200,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": 0,
+          "rating_text": "Not rated",
+          "rating_color": "CBCBC8",
+          "votes": 2
+        },
+        "photos_url": "https://www.zomato.com/tanjore/aasife-biriyani-south-rampart/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/tanjore/aasife-biriyani-south-rampart/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18826854",
+        "order_url": "https://www.zomato.com/tanjore/aasife-biriyani-south-rampart/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/tanjore/aasife-biriyani-south-rampart/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18701626
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18701626",
+        "name": "Cafe Ivy",
+        "url": "https://www.zomato.com/mussoorie/cafe-ivy-landour?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Landour Cantt, Near Chaar Dukaan",
+          "locality": "Landour",
+          "city": "Mussoorie",
+          "city_id": 11304,
+          "latitude": "30.4610066434",
+          "longitude": "78.0949901417",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Landour, Mussoorie"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Cafe",
+        "average_cost_for_two": 1000,
+        "price_range": 3,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/6/18701626/27ef7de7da656a80b451ea217939eae2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "4.3",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "votes": "126"
+        },
+        "photos_url": "https://www.zomato.com/mussoorie/cafe-ivy-landour/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/mussoorie/cafe-ivy-landour/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/6/18701626/27ef7de7da656a80b451ea217939eae2.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18701626",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/mussoorie/cafe-ivy-landour/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18888287
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18888287",
+        "name": "UFO Fries & Corn",
+        "url": "https://www.zomato.com/sangli/ufo-fries-corn-sangli-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Atharva elite, Shop no 1 Dhamni Road Neminat Nagar, Sangli Locality, Sangli",
+          "locality": "Sangli Locality",
+          "city": "Sangli",
+          "city_id": 11431,
+          "latitude": "16.8493149814",
+          "longitude": "74.5885134861",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Sangli Locality, Sangli"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Cafe, Burger, Desserts, Beverages",
+        "average_cost_for_two": 150,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.3",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "19",
+          "custom_rating_text": "NEW",
+          "custom_rating_text_background": "#89959B",
+          "rating_tool_tip": "This restaurant is newly opened. The rating will appear once the restaurant completes 60 days in operation."
+        },
+        "photos_url": "https://www.zomato.com/sangli/ufo-fries-corn-sangli-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/sangli/ufo-fries-corn-sangli-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18888287",
+        "order_url": "https://www.zomato.com/sangli/ufo-fries-corn-sangli-locality/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/sangli/ufo-fries-corn-sangli-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18699322
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18699322",
+        "name": "Earl's Secret",
+        "url": "https://www.zomato.com/ooty/earls-secret-marlimund?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Oriental Buildings, Commissioners Road, Marlimund, Ooty",
+          "locality": "Marlimund",
+          "city": "Ooty",
+          "city_id": 18,
+          "latitude": "11.4199473730",
+          "longitude": "76.6983699426",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Marlimund, Ooty"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Continental, North Indian",
+        "average_cost_for_two": 1200,
+        "price_range": 3,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/2/18699322/a9929a3e88d0640ed0cace11df72d38a.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "3.9",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "votes": "76"
+        },
+        "photos_url": "https://www.zomato.com/ooty/earls-secret-marlimund/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/ooty/earls-secret-marlimund/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/2/18699322/a9929a3e88d0640ed0cace11df72d38a.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18699322",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/ooty/earls-secret-marlimund/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18828274
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18828274",
+        "name": "Shahi Darbar",
+        "url": "https://www.zomato.com/dhanbad/shahi-darbar-dhanbad-locality?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Near ISM main gate, Mini Market, Dhanbad - 826001, Dhanbad Locality, Dhanbad",
+          "locality": "Dhanbad Locality",
+          "city": "Dhanbad",
+          "city_id": 11387,
+          "latitude": "23.8113578140",
+          "longitude": "86.4446551725",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Dhanbad Locality, Dhanbad"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Biryani, Fast Food",
+        "average_cost_for_two": 240,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.3",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "9"
+        },
+        "photos_url": "https://www.zomato.com/dhanbad/shahi-darbar-dhanbad-locality/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/dhanbad/shahi-darbar-dhanbad-locality/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18828274",
+        "order_url": "https://www.zomato.com/dhanbad/shahi-darbar-dhanbad-locality/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/dhanbad/shahi-darbar-dhanbad-locality/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18742897
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18742897",
+        "name": "Glenary's Restaurant  & Bar",
+        "url": "https://www.zomato.com/darjeeling/glenarys-restaurant-bar-chauk-bazaar?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Nehru Road, Chauk Bazaar, Darjeeling",
+          "locality": "Chauk Bazaar",
+          "city": "Darjeeling",
+          "city_id": 11324,
+          "latitude": "27.0431529223",
+          "longitude": "88.2670680061",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Chauk Bazaar, Darjeeling"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Beverages, Cafe, Chinese, Continental, North Indian, Momos",
+        "average_cost_for_two": 1000,
+        "price_range": 3,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "4.0",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "votes": "141"
+        },
+        "photos_url": "https://www.zomato.com/darjeeling/glenarys-restaurant-bar-chauk-bazaar/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/darjeeling/glenarys-restaurant-bar-chauk-bazaar/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18742897",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/darjeeling/glenarys-restaurant-bar-chauk-bazaar/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18746176
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18746176",
+        "name": "Taste of Tibet",
+        "url": "https://www.zomato.com/gangtok/taste-of-tibet-vishal-gaon?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "MG Marg, Vishal Gaon, Gangtok",
+          "locality": "Vishal Gaon",
+          "city": "Gangtok",
+          "city_id": 15,
+          "latitude": "27.3276034597",
+          "longitude": "88.6127269641",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Vishal Gaon, Gangtok"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Tibetan, Chinese",
+        "average_cost_for_two": 500,
+        "price_range": 2,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/6/18746176/1be1ae591609c41c53257f6d7597043f.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "3.3",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "23"
+        },
+        "photos_url": "https://www.zomato.com/gangtok/taste-of-tibet-vishal-gaon/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/gangtok/taste-of-tibet-vishal-gaon/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/6/18746176/1be1ae591609c41c53257f6d7597043f.jpg?output-format=webp",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18746176",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/gangtok/taste-of-tibet-vishal-gaon/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16615050
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "16615050",
+        "name": "Cafe 4342",
+        "url": "https://www.zomato.com/forest-hill-qld/cafe-4342-1-forest-hill?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "40 Victoria St Forest Hill Qld 4342, Forest Hill",
+          "locality": "Forest Hill",
+          "city": "Forest Hill",
+          "city_id": 2761,
+          "latitude": "-27.5902090000",
+          "longitude": "152.3571450000",
+          "zipcode": "4342",
+          "country_id": 14,
+          "locality_verbose": "Forest Hill, Forest Hill"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Coffee and Tea, Desserts, Australian",
+        "average_cost_for_two": 30,
+        "price_range": 3,
+        "currency": "$",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "DIMMI",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.8",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "votes": "17"
+        },
+        "photos_url": "https://www.zomato.com/forest-hill-qld/cafe-4342-1-forest-hill/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/forest-hill-qld/cafe-4342-1-forest-hill/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "medio_provider": "",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/16615050",
+        "is_table_reservation_supported": 1,
+        "has_table_booking": 1,
+        "book_url": "https://www.zomato.com/forest-hill-qld/cafe-4342-1-forest-hill/book?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "events_url": "https://www.zomato.com/forest-hill-qld/cafe-4342-1-forest-hill/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18889517
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18889517",
+        "name": "Grub On The Run",
+        "url": "https://www.zomato.com/rourkela/grub-on-the-run-raurkela-industrialship?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "D 2 bank of india, Raurkela Industrialship, Rourkela",
+          "locality": "Raurkela Industrialship",
+          "city": "Rourkela",
+          "city_id": 11358,
+          "latitude": "22.2242366217",
+          "longitude": "84.8240913078",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Raurkela Industrialship, Rourkela"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Beverages, Burger, Cafe, Chinese, Continental, Fast Food, Finger Food, Healthy Food",
+        "average_cost_for_two": 550,
+        "price_range": 2,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.5",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "votes": "13",
+          "custom_rating_text": "NEW",
+          "custom_rating_text_background": "#89959B",
+          "rating_tool_tip": "This restaurant is newly opened. The rating will appear once the restaurant completes 60 days in operation."
+        },
+        "photos_url": "https://www.zomato.com/rourkela/grub-on-the-run-raurkela-industrialship/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/rourkela/grub-on-the-run-raurkela-industrialship/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18889517",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/rourkela/grub-on-the-run-raurkela-industrialship/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 18881964
+        },
+        "apikey": "6a9190f533bf6c2644b2f2f107af658d",
+        "id": "18881964",
+        "name": "Freaky Fries & More",
+        "url": "https://www.zomato.com/kolhapur/freaky-fries-more-1-tarabhai-park?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "D1-D2, Chowrangi, Near Zilla Parishad, Nagala Park, Tarabhai Park, Kolhapur",
+          "locality": "Tarabhai Park",
+          "city": "Kolhapur",
+          "city_id": 11334,
+          "latitude": "16.7095999370",
+          "longitude": "74.2349202186",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Tarabhai Park, Kolhapur"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Cafe, American, Beverages",
+        "average_cost_for_two": 400,
+        "price_range": 2,
+        "currency": "Rs.",
+        "offers": [
+
+        ],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.4",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "33",
+          "custom_rating_text": "NEW",
+          "custom_rating_text_background": "#89959B",
+          "rating_tool_tip": "This restaurant is newly opened. The rating will appear once the restaurant completes 60 days in operation."
+        },
+        "photos_url": "https://www.zomato.com/kolhapur/freaky-fries-more-1-tarabhai-park/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/kolhapur/freaky-fries-more-1-tarabhai-park/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18881964",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/kolhapur/freaky-fries-more-1-tarabhai-park/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "establishment_types": [
+
+        ]
+      }
+    }
+  ]
+}
