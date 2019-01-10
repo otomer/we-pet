@@ -1,17 +1,17 @@
-import React from 'react';
-import Header from '../../components/Header';
 import Background from '../../components/Background';
-import PromotedRestaurant from '../../components/PromotedRestaurant';
-import Footer from '../../components/Footer';
 import CategoriesContainer from '../../containers/CategoriesContainer';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import ListingSectionContainer from '../../containers/ListingSectionContainer';
+import React from 'react';
+import TopRestaurantContainer from '../../containers/TopRestaurantContainer';
 
 const App = () => {
   return (
     <React.Fragment>
       <Header />
       <Background />
-      <PromotedRestaurant />
+      <TopRestaurantContainer />
       <CategoriesContainer />
       <ListingSectionContainer />
       <Footer />

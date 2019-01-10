@@ -1,21 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import './rating.scss';
 
-const Rating = props => {
-  const { rating } = props;
-  const roundedRating = Math.round(props.rating);
+import PropTypes from 'prop-types';
+import React from 'react';
+import classNames from 'classnames/bind';
+
+const Rating = ({ rating }) => {
+  const roundedRating = Math.round(rating);
   return (
     <span className="rating" title={rating}>
-      {Array.apply(null, { length: 3 })
-        .map(Number.call, Number)
-        .map((x, i) => (
-          <i
-            key={x}
-            className={(i < roundedRating ? 'fas' : 'far') + ' fa-star'}
-            aria-hidden="true"
-          />
-        ))}
+      {[0, 1, 2].map((x, i) => (
+        <i
+          key={x}
+          className={classNames(x < roundedRating ? 'fas' : 'far', 'fa-star')}
+          aria-hidden="true"
+        />
+      ))}
     </span>
   );
 };

@@ -1,24 +1,26 @@
-import React, { Component } from 'react';
+import ListingSection from '../../components/ListingSection';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { connect } from 'react-redux';
 import { fetchRestaurants } from '../../actions';
-import ListingSection from '../../components/ListingSection';
-import { bindActionCreators } from 'redux';
 
-class ListingSectionContainer extends Component {
+class ListingSectionContainer extends React.PureComponent {
   componentDidMount() {
     this.props.fetchRestaurants();
   }
 
   render() {
-    const { restaurants } = this.props;
-    return <ListingSection restaurants={restaurants} />;
+    const { restaurants, lastUpdated } = this.props;
+    return (
+      <ListingSection restaurants={restaurants} lastUpdated={lastUpdated} />
+    );
   }
 }
 
 ListingSectionContainer.propTypes = {
   restaurants: PropTypes.array,
   fetchRestaurants: PropTypes.func.isRequired,
+  lastUpdated: PropTypes.instanceOf(Date),
 };
 
 const mapStateToProps = state => {
@@ -30,9 +32,9 @@ const mapStateToProps = state => {
   };
 };
 
-function mapDispatchToProps(dispatch) {
-  return { fetchRestaurants: bindActionCreators(fetchRestaurants, dispatch) };
-}
+const mapDispatchToProps = {
+  fetchRestaurants,
+};
 
 export default connect(
   mapStateToProps,

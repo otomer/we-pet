@@ -1,23 +1,34 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { fetchCuisines } from '../../actions';
-import CuisinesNavigation from '../../components/CuisinesNavigation';
+import { fetchCuisines, filterCuisine } from '../../actions';
 
-class CategoriesContainer extends Component {
+import Categories from '../../components/Categories';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { connect } from 'react-redux';
+
+class CategoriesContainer extends React.PureComponent {
   componentDidMount() {
     this.props.fetchCuisines();
   }
   render() {
     const { cuisines } = this.props;
-    return <CuisinesNavigation cuisines={cuisines} />;
+    return (
+      <Categories
+        cuisines={cuisines}
+        filterCuisine={this.props.filterCuisine}
+      />
+    );
   }
 }
 
 CategoriesContainer.propTypes = {
-  cuisines: PropTypes.array,
+  cuisines: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      id: PropTypes.number,
+    }),
+  ),
   fetchCuisines: PropTypes.func.isRequired,
+  filterCuisine: PropTypes.func,
 };
 
 const mapStateToProps = state => {
@@ -29,9 +40,10 @@ const mapStateToProps = state => {
   };
 };
 
-function mapDispatchToProps(dispatch) {
-  return { fetchCuisines: bindActionCreators(fetchCuisines, dispatch) };
-}
+const mapDispatchToProps = {
+  fetchCuisines,
+  filterCuisine,
+};
 
 export default connect(
   mapStateToProps,

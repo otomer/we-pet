@@ -1,16 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Tenbis from '../Tenbis';
-import DeliveryTime from '../DeliveryTime';
-import ReviewsBasis from '../ReviewsBasis';
-import Rating from '../Rating';
 import './restaurants-list-item.scss';
 
-/* TODO: This is only a first temp version, will be major changed. */
-const RestaurantsListItem = props => {
-  function cleanup(s) {
-    return s.toLowerCase().replace(/[^a-zA-Z0-9]+/g, '-');
-  }
+import DeliveryTime from '../DeliveryTime';
+import PropTypes from 'prop-types';
+import { RANDOM_IMAGE_LP_URL } from '../../constants';
+import Rating from '../Rating';
+import React from 'react';
+import Review from '../Review';
+import ReviewsBasis from '../ReviewsBasis';
+import Tenbis from '../Tenbis';
+import ToggledReviews from '../ToggledReviews';
+import { cleanup } from '../../helpers/string-helper';
+import sample from 'lodash/sample';
+
+const RestaurantsListItem = ({ restaurant }) => {
   const {
     id,
     name,
@@ -20,48 +22,37 @@ const RestaurantsListItem = props => {
     is_tenbis,
     max_delivery_time,
     rating_avg,
-  } = props.restaurant;
-
-  const cuisinesCsv = cuisines.map(elem => elem.name).join(', ');
+  } = restaurant;
 
   return (
-    <React.Fragment>
-      <div key={id} className={'restaurant-item'}>
-        <div className="meta">
-          <div
-            className="photo"
-            style={{
-              backgroundImage:
-                'url(http://lorempixel.com/246/140/food/' +
-                encodeURIComponent(cleanup(name)) +
-                ')',
-            }}
-          />
-          <ul className="details">
-            <h4>Random Review</h4>
-            <li className="author">Jane Doe</li>
-            <li className="date">July. 15, 2015</li>
-            <li className="comment">Some text comment</li>
-          </ul>
-        </div>
-        <div className="description">
-          <Tenbis isTenbis={is_tenbis} />
-          <h1>{name}</h1>
-          <h2>
-            <Rating rating={rating_avg} />
-            <ReviewsBasis average={rating_avg} total={reviews.length} />
-          </h2>
-          <p>{cuisinesCsv}</p>
-          <DeliveryTime time={max_delivery_time} />
-          <h2>
-            <i className="fas fa-map-marker-alt" /> {location.address}
-          </h2>
-          <p className="read-more">
-            <a href="/">{reviews.length} Review(s)</a>
-          </p>
-        </div>
+    <div key={id} className={'restaurant-item'}>
+      <div className="meta">
+        <div
+          className="photo"
+          style={{
+            backgroundImage: `url(${RANDOM_IMAGE_LP_URL}${cleanup(name)})`,
+          }}
+        />
+        {reviews && reviews.length > 0 && <Review review={sample(reviews)} />}
       </div>
-    </React.Fragment>
+      <div className="description">
+        <Tenbis isTenbis={is_tenbis} />
+        <h1>{name}</h1>
+        <h2>
+          <Rating rating={rating_avg} />
+          {reviews && reviews.length && (
+            <ReviewsBasis average={rating_avg} total={reviews.length} />
+          )}
+        </h2>
+        <p>{cuisines.map(elem => elem.name).join(', ')}</p>
+        <DeliveryTime time={max_delivery_time} />
+        <h2>
+          <i className="fas fa-map-marker-alt" />{' '}
+          {(location && location.address) || 'No location'}
+        </h2>
+        <ToggledReviews reviews={reviews} />
+      </div>
+    </div>
   );
 };
 
@@ -69,11 +60,23 @@ RestaurantsListItem.propTypes = {
   restaurant: PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
-    cuisines: PropTypes.array.isRequired,
-    max_delivery_time: PropTypes.number.isRequired,
-    is_tenbis: PropTypes.bool.isRequired,
-    rating_avg: PropTypes.number.isRequired,
-    reviews: PropTypes.array.isRequired,
+    cuisines: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.name,
+        id: PropTypes.number,
+      }),
+    ).isRequired,
+    max_delivery_time: PropTypes.number,
+    is_tenbis: PropTypes.bool,
+    rating_avg: PropTypes.number,
+    reviews: PropTypes.arrayOf(
+      PropTypes.shape({
+        author: PropTypes.string,
+        comment: PropTypes.string,
+        rating: PropTypes.number,
+        id: PropTypes.number,
+      }),
+    ).isRequired,
     location: PropTypes.shape({
       address: PropTypes.string.isRequired,
       latitude: PropTypes.string.isRequired,

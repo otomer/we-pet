@@ -1,11 +1,13 @@
-import React from 'react';
-import { APP_NAME } from '../../constants';
 import './footer.scss';
+
+import { APP_NAME } from '../../constants';
+import React from 'react';
 
 const Footer = () => {
   return (
     <footer className="footer-container">
-      Copyright © 2019 {APP_NAME}. All rights reserved
+      Copyright &copy; 2019 {APP_NAME}. All rights reserved // Coded with ❤ by
+      Tomer Ovadia
     </footer>
   );
 };
