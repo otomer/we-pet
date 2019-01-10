@@ -1,0 +1,17 @@
+.listing-section-container .container {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  // color: var(--we-grey-DETROIT);
+  max-height: 1000px;
+  font-size: 13px;
+}
+
+.flexbox-container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+}
