@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Constants from '../../constants';
+import { APP_NAME } from '../../constants';
 import './logo.scss';
 
 const Logo = () => {
@@ -8,7 +8,7 @@ const Logo = () => {
       <a href="/">
         <h1>
           <i className="fa fa-utensils logo-icon" aria-hidden="true" />
-          {Constants.APP_NAME}
+          {APP_NAME}
         </h1>
       </a>
     </div>

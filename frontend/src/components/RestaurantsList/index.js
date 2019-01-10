@@ -4,22 +4,26 @@ import RestaurantsListItem from '../RestaurantsListItem';
 import './restaurants-list.scss';
 
 const RestaurantsList = props => {
-  const { items } = props;
+  const { restaurants } = props;
   return (
     <div className="restaurants-list-container">
       <div className="container-content">
-        {items.map(restaurant => {
-          return (
-            <RestaurantsListItem key={restaurant.id} restaurant={restaurant} />
-          );
-        })}
+        {restaurants &&
+          restaurants.map(restaurant => {
+            return (
+              <RestaurantsListItem
+                key={restaurant.id}
+                restaurant={restaurant}
+              />
+            );
+          })}
       </div>
     </div>
   );
 };
 
 RestaurantsList.propTypes = {
-  items: PropTypes.array.isRequired,
+  restaurants: PropTypes.array,
 };
 
 export default RestaurantsList;
