@@ -1,0 +1,18 @@
+.background-container {
+  flex-basis: 162vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: url('/assets/images/background.png') no-repeat center 35%;
+  background-size: cover;
+  padding: 1.6rem;
+  height: 200px;
+
+  .title {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--we-grey-SYRACUSE);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+}

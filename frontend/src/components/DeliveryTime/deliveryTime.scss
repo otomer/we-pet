@@ -1,0 +1,11 @@
+.delivery {
+  &.fast {
+    color: var(--greenish);
+  }
+  &.fair {
+    color: var(--we-yellow-MIAMI);
+  }
+  &.slow {
+    color: var(--we-red-TULSA);
+  }
+}

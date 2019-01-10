@@ -5,7 +5,7 @@ module Api
 
       # GET /cuisines
       def index
-        render json: Cuisine.all, status: :ok
+        render json: Cuisine.byRestaurantsCount, status: :ok
       end
 
       # GET /cuisines/1
