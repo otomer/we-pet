@@ -10,7 +10,6 @@ import {
 import { compose, withProps } from 'recompose';
 
 import { GOOGLE_MAPS_API_KEY } from '../../constants';
-import LoadingHOC from '../../hoc/loading.hoc';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -130,6 +129,7 @@ class Map extends React.PureComponent {
 Map.propTypes = {
   markers: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.number,
       latitude: PropTypes.string,
       longitude: PropTypes.string,
       name: PropTypes.string,
@@ -138,4 +138,4 @@ Map.propTypes = {
   ),
 };
 
-export default LoadingHOC('markers')(Map);
+export default Map;

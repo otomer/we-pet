@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 // 3rd Party implementation
-class Modal extends React.Component {
+class Modal extends React.PureComponent {
   static propTypes = {
     isModalOpen: PropTypes.bool.isRequired,
     closeModal: PropTypes.func.isRequired,

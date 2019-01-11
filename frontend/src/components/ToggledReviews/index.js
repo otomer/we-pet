@@ -5,7 +5,7 @@ import Rating from '../Rating';
 import React from 'react';
 import classNames from 'classnames/bind';
 
-class ToggledReviews extends React.Component {
+class ToggledReviews extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = { open: false };

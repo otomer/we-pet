@@ -27,7 +27,7 @@ const SelectFilters = ({ filterRating, filterMaxDeliveryTime }) => {
 
       <div className="select-style">
         <select onChange={e => filterMaxDeliveryTime(e.target.value)}>
-          <option>Maximum Delivery Time...</option>
+          <option value="">Maximum Delivery Time...</option>
           {upToTimes.map(time => {
             return (
               <option key={time.value} value={time.value}>

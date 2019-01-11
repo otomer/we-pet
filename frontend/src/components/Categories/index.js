@@ -1,6 +1,5 @@
 import './cuisines-navigation.scss';
 
-import LoadingHOC from '../../hoc/loading.hoc';
 import PropTypes from 'prop-types';
 import React from 'react';
 
