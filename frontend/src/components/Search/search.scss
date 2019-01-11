@@ -1,0 +1,51 @@
+.search-container {
+  flex-grow: 1;
+  margin: 0 2.5rem;
+  display: flex;
+  height: 3.2rem;
+
+  .search-input,
+  .search-btn {
+    border: 0.1rem solid #ccc;
+  }
+
+  .search-input {
+    flex-basis: 60rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border-right: none;
+    padding-left: 1rem;
+    color: var(--we-black-ANCHORAGE);
+  }
+
+  .search-input::-webkit-input-placeholder {
+    color: var(--we-grey-DETROIT);
+  }
+
+  .search-input:-ms-input-placeholder {
+    color: var(--we-grey-DETROIT);
+  }
+
+  .search-input::-ms-input-placeholder {
+    color: var(--we-grey-DETROIT);
+  }
+
+  .search-input::placeholder {
+    color: var(--we-grey-DETROIT);
+  }
+
+  .search-btn {
+    flex: 0 0 6.5rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    background-color: var(--we-grey-SYRACUSE);
+    color: var(--we-black-ANCHORAGE);
+    cursor: pointer;
+  }
+
+  .search-btn:hover {
+    background-color: var(--we-grey-PITTSBURGH);
+  }
+}

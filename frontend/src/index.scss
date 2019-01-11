@@ -1,0 +1,70 @@
+:root {
+  font-size: 10px;
+  --we-grey-DETROIT: #818284;
+  --we-grey-PORTLAND: #c4c3c3;
+  --we-grey-PITTSBURGH: #e2e2e2;
+  --we-grey-SYRACUSE: #f7f7f7;
+  --we-black-ANCHORAGE: #252729;
+  --we-yellow-MIAMI: #edae49;
+  --we-red-TULSA: #d3596c;
+  --we-blue-CHICAGO: #7ab9de;
+  --grey-dark: #a2a2a2;
+  --white: #fff;
+  --greenish: #5ad67d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Proxima Nova', 'Roboto', 'Oswald', Arial, sans-serif;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 138rem;
+  margin: 0 auto;
+  padding: 0 2vw;
+}
+
+.btn {
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-weight: 500;
+  background-color: #eee;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--we-grey-PORTLAND);
+  border-radius: 0.5rem;
+  border: 0.2rem soliÎd var(--white);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
