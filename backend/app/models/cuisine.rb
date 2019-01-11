@@ -11,8 +11,4 @@ class Cuisine < ApplicationRecord
   has_many :restaurants, through: :restaurant_cuisines, dependent: :destroy
   validates :name, presence: true
   validates :name, uniqueness: true
-
-  scope :byRestaurantsCount, -> {left_joins(:restaurants)
-                           .group(:id)
-                           .order('COUNT(restaurants.id) DESC')}
 end

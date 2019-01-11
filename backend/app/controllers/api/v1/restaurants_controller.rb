@@ -6,11 +6,11 @@ module Api
       # GET /restaurants
       def index
         page = params[:page] ? params[:page].to_i : 1
-        per_page = 40
+        per_page = 6
 
-        @restaurants = Restaurant.filter(params.slice(:q_name, :q_is_tenbis, :q_max_delivery_time, :q_min_rating_avg, :q_cuisine)).all
+        @restaurants = Restaurant.filter(params.slice(:q_name, :q_is_tenbis, :q_max_delivery_time, :q_min_rating_avg)).all
         total_count = @restaurants.all.size
-        @restaurants = @restaurants.order("rating_avg DESC").paginate(:page => page, :per_page => per_page)
+        @restaurants = @restaurants.paginate(:page => page, :per_page => per_page)
 
         from = (page - 1) * per_page
         pager = {
@@ -22,13 +22,13 @@ module Api
             total_pages: (total_count / per_page) + 1
         }
 
-        render json: {count: @restaurants.length, pager: pager, restaurants: @restaurants}, status: :ok, include: [:reviews, :location, :cuisines]
+        render json: {count: @restaurants.length, pager: pager, restaurants: @restaurants}, status: :ok, include: [:reviews, :location]
       end
 
       # GET /restaurant/1
       def show
         if @restaurant
-          render json: @restaurant, status: :ok, include: [:location, :reviews, :cuisines]
+          render json: @restaurant, status: :ok, include: [:location, :reviews]
         else
           render status: :unprocessable_entity
         end
@@ -36,17 +36,9 @@ module Api
 
       # POST /restaurants
       def create
-
-        # This line throws ActiveRecord::AssociationTypeMismatch during save, not sure why
-        # @restaurant = Restaurant.new(restaurant_params)
-        # So i changed it to:
-        @restaurant = Restaurant.new(name: restaurant_params[:name], is_tenbis: restaurant_params[:is_tenbis],
-                                     max_delivery_time: restaurant_params[:max_delivery_time],
-                                     location: Location.new(restaurant_params[:location]))
-        @restaurant.cuisines << Cuisine.find(restaurant_params[:cuisine_id])
-
+        @restaurant = Restaurant.new(restaurant_params)
         if @restaurant.save
-          render json: @restaurant, status: :created, include: [:location, :cuisines]
+          render json: @restaurant, status: :created
         else
           render json: {errors: @restaurant.errors}, status: :unprocessable_entity
         end
@@ -85,7 +77,7 @@ module Api
       end
 
       def restaurant_params
-        params.permit(:name, :is_tenbis, :max_delivery_time, :cuisine_id, location: [:address, :longitude, :latitude])
+        params.permit(:name, :is_tenbis, :max_delivery_time)
       end
     end
 

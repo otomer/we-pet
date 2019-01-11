@@ -1,10 +1,4 @@
 Rails.application.routes.draw do
-  # Sidekiq
-  require 'sidekiq/web'
-  require 'sidekiq/cron/web'
-  mount Sidekiq::Web => '/sidekiq'
-
-  # Swagger
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
   namespace :api, defaults: {format: :json} do

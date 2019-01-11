@@ -1,4 +1,4 @@
-# wetasty / Backend
+# weTasty / BackEnd
 
 Steps necessary to get the application up and running
 
@@ -79,8 +79,8 @@ How to run the test suite:
     
 ---   
 #### Services (job queues, cache servers, search engines, etc.)
-- [Sidekiq](https://github.com/mperham/sidekiq) (Background processing) - **no special use**
-
+TBD
+---
 #### Deployment instructions
 TBD
 ---
