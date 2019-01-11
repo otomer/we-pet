@@ -96,7 +96,7 @@ class Map extends React.PureComponent {
       infoboxTitle: message, // Message shown in info window
       infoboxAddress: address, // Address shown in info window
       isInfoboxVisible: !this.state.isInfoboxVisible, // Show info window
-      markerLang: lang + 0.5, // Y coordinate for positioning info window
+      markerLang: lang + 0.006, // Y coordinate for positioning info window
       markerLat: lat + 0.0004, // X coordinate for positioning info window
     });
   };
