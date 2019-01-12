@@ -37,19 +37,16 @@
     <title>wetasty | EAT WHAT YOU LOVE</title>
   </head>
   <body>
+    <input
+      id="react_app_api_url"
+      type="hidden"
+      defaultValue="{process.env.REACT_APP_API_URL}"
+    />
     <script>
-      window.REACT_APP_API_URL =
-        (typeof process !== 'undefined' &&
-          process.env &&
-          process.env.REACT_APP_API_URL) ||
-        (typeof REACT_APP_API_URL !== 'undefined' && REACT_APP_API_URL) ||
-        '//localhost:3001/api/v1/';
-
-      if (typeof process !== 'undefined') {
-        console.log('process', process);
-      } else if (typeof REACT_APP_API_URL !== 'undefined') {
-        console.log('REACT_APP_API_URL', REACT_APP_API_URL);
-      }
+      let hidden = document.getElementById('react_app_api_url');
+      window.REACT_APP_API_URL = hidden
+        ? hidden.value
+        : '//localhost:3001/api/v1/';
     </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
