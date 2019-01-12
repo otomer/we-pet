@@ -40,13 +40,13 @@
     <input
       id="react_app_api_url"
       type="hidden"
-      defaultValue="{process.env.REACT_APP_API_URL}"
+      defaultValue="//localhost:3001/api/v1/"
+      value="{process.env.REACT_APP_API_URL}"
     />
     <script>
-      let hidden = document.getElementById('react_app_api_url');
-      window.REACT_APP_API_URL = hidden
-        ? hidden.value
-        : '//localhost:3001/api/v1/';
+      window.REACT_APP_API_URL = document.getElementById(
+        'react_app_api_url',
+      ).value;
     </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
