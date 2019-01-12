@@ -37,6 +37,20 @@
     <title>wetasty | EAT WHAT YOU LOVE</title>
   </head>
   <body>
+    <script>
+      window.REACT_APP_API_URL =
+        (typeof process !== 'undefined' &&
+          process.env &&
+          process.env.REACT_APP_API_URL) ||
+        (typeof REACT_APP_API_URL !== 'undefined' && REACT_APP_API_URL) ||
+        '//localhost:3001/api/v1/';
+
+      if (typeof process !== 'undefined') {
+        console.log('process', process);
+      } else if (typeof REACT_APP_API_URL !== 'undefined') {
+        console.log('REACT_APP_API_URL', REACT_APP_API_URL);
+      }
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
