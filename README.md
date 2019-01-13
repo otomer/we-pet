@@ -1,6 +1,7 @@
-# wetasty - EAT WHAT YOU LOVE...
+# wetasty - eat what you love...
 
 January 2019
+Coded with ❤ by Tomer Ovadia
 
 ## Overview
 This website let's you view and filter restaurants by decision-crticial parameters such as time-to-delivery, 10bis availability, cuisines and location. In short: this is a Ruby on Rails backend with a React frontend.
