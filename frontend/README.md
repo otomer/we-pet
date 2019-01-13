@@ -6,6 +6,10 @@ Frontend application based on React and node.js.
 
 Note: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![React](https://juffalow.com/user/pages/02.javascript/react-and-setstate-method/react-logo.png "React")
+![Redux](https://cdn-images-1.medium.com/max/1200/1*0nHtg7jz-cd49KIb-Za8lg.png "Redux")
+
+
 ### Prerequisites
 * yarn (a package manager)
 ---
