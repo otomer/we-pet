@@ -26,5 +26,5 @@ Generated with <img src="https://camo.githubusercontent.com/456fc398063f4b75ec39
 - Node.js web server
 - Also used: react-redux, redux-form, sass, font-awesome-free, google-maps and more.
  
- 
-![alt text](https://media.giphy.com/media/hTAYO8bJLMNDcv0vhH/giphy.gif "Logo Title Text 1")
+![Alt Text](https://media.giphy.com/media/hTAYO8bJLMNDcv0vhH/giphy.gif)
+
