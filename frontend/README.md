@@ -1,6 +1,9 @@
 # wetasty / Frontend
 
 Frontend application based on React and node.js.
+
+- View the app <a href="https://wetasty.herokuapp.com" target="_blank">in Heroku</a>
+
 Note: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 (For more details about the create react app package, see down section "Create React App")
 
@@ -13,12 +16,6 @@ Note: This project was bootstrapped with [Create React App](https://github.com/f
 ### Server start
     yarn start
 ---
-
-### Demo & Screenshots
-
-- View the app <a href="https://wetasty.herokuapp.com" target="_blank">in Heroku</a>
-
-![demo](demo.gif)
 
 ### Details about packages used
  
@@ -37,10 +34,11 @@ Note: This project was bootstrapped with [Create React App](https://github.com/f
     - [react-redux](https://github.com/reduxjs/react-redux) (manage appication's state using a predictable state container, also using [redux](https://github.com/reduxjs/redux))
     - [redux-form](https://github.com/erikras/redux-form) (maintaining form's state)
     - [redux-thunk](https://github.com/reduxjs/redux-thunk) (Thunk middleware for Redux)
-    
+   
 ### Screenshots
 
-![demo](frontend/demo.gif)
+![demo](demo.gif)
+![demo2](demo-2.gif)
 
 ---
 ### Testing
