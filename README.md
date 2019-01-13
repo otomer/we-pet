@@ -26,5 +26,5 @@ Generated with <img src="https://camo.githubusercontent.com/456fc398063f4b75ec39
 - Node.js web server
 - Also used: react-redux, redux-form, sass, font-awesome-free, google-maps and more.
  
-![Alt Text](https://s2.gifyu.com/images/wetasty-_-EAT-WHAT-YOU-LOVE.gif)
+ <img src="https://s2.gifyu.com/images/wetasty-_-EAT-WHAT-YOU-LOVE.gif" /> 
 
