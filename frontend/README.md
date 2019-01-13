@@ -1,6 +1,7 @@
 # wetasty / Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend application based on React and node.js.
+Note: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 (For more details about the create react app package, see down section "Create React App")
 
 ### Prerequisites
@@ -13,7 +14,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     yarn start
 ---
 
-### Packages used
+### Demo & Screenshots
+
+- View the app [in Heroku](https://wetasty.herokuapp.com)
+
+![demo](frontend/demo.gif)
+
+### Details about packages used
  
 - HTTP 
     - [axios](https://www.npmjs.com/package/axios) (Promise based HTTP client for the browser and node.js.)
@@ -31,7 +38,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - [redux-form](https://github.com/erikras/redux-form) (maintaining form's state)
     - [redux-thunk](https://github.com/reduxjs/redux-thunk) (Thunk middleware for Redux)
     
-    
+### Screenshots
+
+![demo](frontend/demo.gif)
+
 ---
 ### Testing
 No testing
