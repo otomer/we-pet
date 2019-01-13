@@ -25,5 +25,6 @@ Generated with <img src="https://camo.githubusercontent.com/456fc398063f4b75ec39
 - React (using [create-react-app](https://github.com/facebook/create-react-app) v2.1.2)
 - Node.js web server
 - Also used: react-redux, redux-form, sass, font-awesome-free, google-maps and more.
- ![wetasty](https://media.giphy.com/media/hTAYO8bJLMNDcv0vhH/giphy.gif)
  
+ 
+![alt text](https://media.giphy.com/media/hTAYO8bJLMNDcv0vhH/giphy.gif "Logo Title Text 1")
