@@ -2,11 +2,11 @@
 
 Frontend application based on React and node.js.
 
+<img src="https://i.ibb.co/YQQZcqs/React-Redux-1491929487363-1.png" alt="React" title="React" data-canonical-src="https://i.ibb.co/YQQZcqs/React-Redux-1491929487363-1.png"   height="55">  
+
 - View the app <a href="https://wetasty.herokuapp.com" target="_blank">in Heroku</a>
 
 Note: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-<img src="https://i.ibb.co/YQQZcqs/React-Redux-1491929487363-1.png" alt="React" title="React" data-canonical-src="https://i.ibb.co/YQQZcqs/React-Redux-1491929487363-1.png"   height="55">  
 
 ### Prerequisites
 * yarn (a package manager)
