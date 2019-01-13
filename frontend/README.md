@@ -6,7 +6,7 @@ Frontend application based on React and node.js.
 
 Note: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<img src="https://camo.githubusercontent.com/dfbd95731734ff4b7cb3e9e68d497aecb6b78c13/68747470733a2f2f6a756666616c6f772e636f6d2f757365722f70616765732f30322e6a6176617363726970742f72656163742d616e642d73657473746174652d6d6574686f642f72656163742d6c6f676f2e706e67" alt="React" title="React" data-canonical-src="https://juffalow.com/user/pages/02.javascript/react-and-setstate-method/react-logo.png" width="55" height="55"><img src="https://camo.githubusercontent.com/036d2ee9b2ea69c01200ca0e4a5fe194d946c05e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a306e487467376a7a2d636434394b49622d5a61386c672e706e67" alt="Redux" title="Redux" data-canonical-src="https://cdn-images-1.medium.com/max/1200/1*0nHtg7jz-cd49KIb-Za8lg.png" width="55" height="55">
+<img src="https://camo.githubusercontent.com/dfbd95731734ff4b7cb3e9e68d497aecb6b78c13/68747470733a2f2f6a756666616c6f772e636f6d2f757365722f70616765732f30322e6a6176617363726970742f72656163742d616e642d73657473746174652d6d6574686f642f72656163742d6c6f676f2e706e67" alt="React" title="React" data-canonical-src="https://juffalow.com/user/pages/02.javascript/react-and-setstate-method/react-logo.png" width="55" height="55"> + <img src="https://camo.githubusercontent.com/036d2ee9b2ea69c01200ca0e4a5fe194d946c05e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a306e487467376a7a2d636434394b49622d5a61386c672e706e67" alt="Redux" title="Redux" data-canonical-src="https://cdn-images-1.medium.com/max/1200/1*0nHtg7jz-cd49KIb-Za8lg.png" width="50" height="50">
 
 
 ### Prerequisites
