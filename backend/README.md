@@ -1,6 +1,6 @@
 # wetasty / Backend
 
-Steps necessary to get the application up and running
+Ruby on Rails backend application, used to expose a REST api.
 
 #### Prerequisites
 * Ruby version: 2.3.7p456 (2018-03-28 revision 63024)
