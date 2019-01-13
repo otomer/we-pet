@@ -4,6 +4,16 @@ December, 2018
 ## Overview
 This website let's you view and filter restaurants by decision-crticial parameters such as time-to-delivery, 10bis availability, cuisines and location. In short: this is a Ruby on Rails backend with a React frontend.
 
+## Frontend
+[Read more about the frontend](https://github.com/otomer/we-pet/blob/master/frontend/README.md)
+- React (using [create-react-app](https://github.com/facebook/create-react-app) v2.1.2)
+- Node.js web server
+- Also used: react-redux, redux-form, sass, font-awesome-free, google-maps and more.
+ 
+![demo](frontend/demo.gif)
+
+---
+
 ## Backend 
 [Read more about the backend](https://github.com/otomer/we-pet/blob/master/backend/README.md)
 - Ruby on Rails (2.3.7) / Rails (5.2.2)
@@ -19,13 +29,5 @@ Generated with <img src="https://camo.githubusercontent.com/456fc398063f4b75ec39
 ### Swagger
 <img src="https://camo.githubusercontent.com/9b8fe5a916d73894944bdd0dfc7ce547f6ff7149/68747470733a2f2f692e6962622e636f2f3343534c6671442f657a6769662d312d3930336133643333653163362e676966" alt="Swagger" data-canonical-src="https://i.ibb.co/3CSLfqD/ezgif-1-903a3d33e1c6.gif"  height="400">
 
-
-## Frontend
-[Read more about the frontend](https://github.com/otomer/we-pet/blob/master/frontend/README.md)
-- React (using [create-react-app](https://github.com/facebook/create-react-app) v2.1.2)
-- Node.js web server
-- Also used: react-redux, redux-form, sass, font-awesome-free, google-maps and more.
- 
-![](frontend/demo.gif)
 
 
