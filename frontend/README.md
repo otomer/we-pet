@@ -16,9 +16,9 @@ Note: This project was bootstrapped with [Create React App](https://github.com/f
 
 ### Demo & Screenshots
 
-- View the app [in Heroku](https://wetasty.herokuapp.com)
+- View the app <a href="https://wetasty.herokuapp.com" target="_blank">in Heroku</a>
 
-![demo](frontend/demo.gif)
+![demo](demo.gif)
 
 ### Details about packages used
  
