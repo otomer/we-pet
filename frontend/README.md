@@ -38,7 +38,7 @@ Note: This project was bootstrapped with [Create React App](https://github.com/f
 ### Screenshots
 
 ![demo](demo.gif)
-![demo2](demo-2.gif)
+![demo2](demo2.gif)
 
 ---
 ### Testing
